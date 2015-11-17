@@ -1,0 +1,28 @@
+#random.seed = 1284067381
+stop.at = 100
+
+# world definition props
+min.x = 0
+min.y = 0
+max.x = 719 
+max.y = 359
+grid.buffer = 2
+
+# these must multiply to total number of processes
+proc.per.x = 24
+proc.per.y = 12
+
+# population input/output files
+human.input.file = ../data/landscan_sc_human_5000.h5
+human.output.file = /home/sc/ssd/williamljb/human_out_5000.h5
+human.dataname = human_population
+
+zombie.input.file = ../data/landscan_sc_zombie_5000.h5
+zombie.output.file = /home/sc/ssd/williamljb/zombie_out_5000.h5
+zombie.dataname = zombie_population
+
+# output frequency
+output.interval = 10
+
+# named random number distributions
+distribution.zombie_move = int_uniform, 0, 2
